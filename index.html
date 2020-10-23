@@ -12,7 +12,7 @@
 
 </head>
 <body>
-
+<div class="center_div">
 <div class="tab">
   <button class="tablinks" onclick="openLegal(event, 'MSA')" id="MSA_button">Master Services Agreement</button>
   <button class="tablinks" onclick="openLegal(event, 'PP')" id="PP_button">Privacy Policy</button>
@@ -310,7 +310,7 @@ We will provide you with prompt notice of any suspension.
 This Privacy Policy explains how we handls the personal information we collect through our website, marketing, event, and sales activities (“<strong>Personal Data</strong>”).
 </p>
 <p>
-It doesn’t apply to the information customers provide to us when they use our services. To read about how we protect, secure, and keep confidential that information, please refer to the &lt;Master Services Agreement>.
+It doesn’t apply to the information customers provide to us when they use our services. To read about how we protect, secure, and keep confidential that information, please refer to the <a href="#" onclick="document.getElementById('MSA_button').click();">Master Services Agreement.</a>
 </p>
 <p>
 <strong>The Personal Data we collect</strong>
@@ -569,6 +569,7 @@ This agreement is governed by the laws of the State of California, excluding its
   &nbsp;
 </p>
 </div></div>
+</div>
 <script>
 function openLegal(evt, legalDocName) {
   var i, tabcontent, tablinks;

@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
+body {font-family: "Lato", sans-serif; overflow-y:scroll}
 
 /* Style the tab */
 .tab {
@@ -9,6 +9,7 @@ body {font-family: "Lato", sans-serif;}
   opacity: 0.8;
   width: 20%;
   height: 300px;
+
 }
 
 /* Style the buttons inside the tab */
@@ -41,7 +42,7 @@ body {font-family: "Lato", sans-serif;}
   float: left;
   padding: 12px 12px;
   border: 0px solid #338DFF;
-  width: 80%;
+  width: 70%;
   border-left: none;
   height: 300px;
   font-size: 15px;
@@ -54,7 +55,7 @@ body {font-family: "Lato", sans-serif;}
 .tabcontentchild {
   padding: 12px 12px;
   border: 0px solid #338DFF;
-  width: 90%;
+  width: 95%;
   border-left: none;
   height: 300px;
   font-size: 15px;
@@ -64,6 +65,12 @@ body {font-family: "Lato", sans-serif;}
 	max-width: 50em;
   margin: auto;
 
+}
+
+.center_div {
+  width: 60%;
+  min-width: 1150px;
+  margin: auto;
 }
 
 .center {
