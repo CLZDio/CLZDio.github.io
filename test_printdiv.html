@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Print the content of a div
+    </title>
+
+    <!-- Script to print the content of a div -->
+    <script>
+        function printDiv() {
+            var divContents = document.getElementById("GFG").innerHTML;
+            var a = window.open('', '', 'height=600, width=600');
+            a.document.write('<html>');
+            a.document.write('<body > <h1>Div contents are <br>');
+            a.document.write(divContents);
+            a.document.write('</body></html>');
+            a.document.close();
+            a.print();
+        }
+    </script>
+</head>
+
+<body style="text-align:center;">
+
+    <div id="GFG" style="background-color: green;">
+
+        <h2>Geeksforgeeks</h2>
+
+        <p>
+            This is inside the div and will be printed
+            on the screen after the click.
+        </p>
+    </div>
+
+    <input type="button" value="click" onclick="printDiv()">
+    <script type="text/javascript">
+        function download() {
+            var a = document.body.appendChild(
+               document.createElement("a")
+            );
+           a.download = "newfile.html";
+           a.href = "data:text/html," + document.getElementById("content").innerHTML;
+           a.click(); //Trigger a click on the element
+        }
+    </script>
+
+<div style="border: 1px solid #357ae8; width: 500px; height: 350px">
+        <div id="content">
+            <h1 style="color: #3d75bd;">Dear user download me....</h1>
+            <i>click below download button</i>
+        </div>
+        <button onclick="download()">Download</button>
+    </div>
+
+<a href="#" onclick="document.getElementById('SST_button').click();">Service-Specific Terms</a>
+
+</body>
+
+</html>

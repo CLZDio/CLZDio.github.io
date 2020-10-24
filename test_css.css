@@ -29,13 +29,13 @@ body {font-family: "Lato", sans-serif; overflow-y:scroll}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  color: #121234;
-  background-color: #e1e8fa;
+  color: #041420;
+  background-color: #c1c8fa;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  color: #121234;
+  color: #061640;
   background-color: #e1e8fa;
 }
 
@@ -77,4 +77,13 @@ body {font-family: "Lato", sans-serif; overflow-y:scroll}
 
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.imagebutton {
+  border: none;
+  background-color: inherit;
 }
