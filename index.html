@@ -87,6 +87,7 @@
       const hash = $(this).attr("href");
       newUrl = url.split("#")[0] + hash;
       history.replaceState(null, null, newUrl);
+      $(window).scrollTop(0);
     });
   });
 
